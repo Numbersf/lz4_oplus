@@ -13,7 +13,7 @@ SKIPPED=0
 FAILED=0
 
 info()  { echo "[INFO] $*"; }
-pass()    { echo "[PASS]   $*"; ((PATCHED++)) || true; }
+pass()    { echo "[PASS] $*"; ((PATCHED++)) || true; }
 skip()  { echo "[SKIP] $*"; ((SKIPPED++)) || true; }
 fail()  { echo "::error:: [FAIL] $*"; ((FAILED++)) || true; }
 
